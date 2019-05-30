@@ -103,6 +103,8 @@ class FormConfigBuilder implements FormConfigBuilderInterface
 
     private $autoInitialize = false;
     private $options;
+    
+    private static $accents = 'áàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸ';
 
     /**
      * Creates an empty form configuration.
@@ -799,6 +801,6 @@ class FormConfigBuilder implements FormConfigBuilderInterface
      */
     public static function isValidName($name)
     {
-        return '' === $name || null === $name || preg_match('/^[a-zA-Z0-9_][a-zA-Z0-9_\-:]*$/D', $name);
+        return '' === $name || null === $name || preg_match('/^[a-zA-Z0-9_][a-zA-Z0-9_'.self::$accents.'\-:]*$/D', $name);
     }
 }
