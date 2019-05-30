@@ -1,5 +1,5 @@
 {
-    "name": "symfony/form",
+    "name": "elhadraoui/symfony-form",
     "type": "library",
     "description": "Symfony Form Component",
     "keywords": [],
@@ -35,6 +35,9 @@
         "symfony/security-csrf": "~3.4|~4.0",
         "symfony/translation": "~4.2",
         "symfony/var-dumper": "^4.3"
+    },
+    "replace": {
+        "symfony/form": "self.version"
     },
     "conflict": {
         "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
