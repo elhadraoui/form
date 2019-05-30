@@ -1,5 +1,5 @@
 {
-    "name": "symfony/form",
+    "name": "elhadraoui/symfony-form",
     "type": "library",
     "description": "Symfony Form Component",
     "keywords": [],
